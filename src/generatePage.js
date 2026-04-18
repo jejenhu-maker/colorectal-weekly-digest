@@ -58,7 +58,7 @@ function buildPageHtml(data, overallInsights, weekStart, weekEnd, year) {
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>🔬 Colorectal Weekly Digest — ${weekEnd}</title>
-<script src="https://cdn.jsdelivr.net/gh/nicholasgasior/PptxGenJS@3.12.0/dist/pptxgen.bundle.js"><\/script>
+<script src="https://cdn.jsdelivr.net/npm/pptxgenjs@3.12.0/dist/pptxgen.bundle.js"><\/script>
 <style>
   :root {
     --blue: #2563eb;
