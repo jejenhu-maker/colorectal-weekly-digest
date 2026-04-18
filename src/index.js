@@ -7,6 +7,7 @@ const { translateAll } = require('./translate');
 const { generateInsights } = require('./generateInsights');
 const { renderHtml } = require('./renderHtml');
 const { generatePage } = require('./generatePage');
+const { generatePptx } = require('./generatePptx');
 const { sendEmail } = require('./sendEmail');
 const fs = require('fs');
 const path = require('path');
@@ -57,6 +58,10 @@ async function main() {
   // Step 6: Generate interactive page (for GitHub Pages)
   console.log('\n── Step 6: Generating interactive page ──');
   generatePage(top, overallInsights);
+
+  console.log('\n── Step 6b: Generating PPTX ──');
+  const weekRange = `${new Date(Date.now() - 7*86400000).toISOString().slice(0,10)} — ${new Date().toISOString().slice(0,10)}`;
+  await generatePptx(top, overallInsights, weekRange);
 
   // Step 7: Render email HTML
   console.log('\n── Step 7: Rendering email HTML ──');

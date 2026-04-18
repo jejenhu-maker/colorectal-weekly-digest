@@ -234,7 +234,7 @@
   <div class="toolbar">
     <button class="select-all" onclick="toggleAll()">全選 / 取消</button>
     <span class="count" id="countLabel">已選 0 篇</span>
-    <button id="genBtn" disabled onclick="generatePPT()">📊 產生簡報 (.pptx)</button>
+    <a href="./latest-digest.pptx" download style="display:inline-block;background:var(--blue);color:white;border:none;padding:10px 20px;border-radius:8px;font-size:14px;font-weight:600;text-decoration:none;cursor:pointer;">📊 下載簡報 (.pptx)</a>
   </div>
 
   <div id="papers">
@@ -243,6 +243,31 @@
       <div class="paper-top">
         <input type="checkbox" id="cb-0" onclick="event.stopPropagation(); updateCount();">
         <div class="paper-num">1</div>
+        <div class="paper-title"><a href="https://jamanetwork.com/journals/jama/article-abstract/2846538" target="_blank" onclick="event.stopPropagation();">ORCHESTRA Hits a Sour Note for Debulking in Metastatic Colorectal Cancer</a></div>
+      </div>
+      <div class="badges">
+        <span class="badge badge-if">IF 63.1</span>
+        
+        
+        
+      </div>
+      <div class="meta">
+        📰 JAMA &nbsp; 📅 2026 &nbsp; 👥 M Fakih
+      </div>
+      <div class="section-label">Abstract</div>
+      <div class="abstract-text">… resectable liver metastases from colorectal cancer (EORTC … surgery alone for colorectal peritoneal metastases (PRODIGE 7)… resection of pulmonary metastases from colorectal cancer: a …</div>
+      <div class="section-label">中文摘要</div>
+      <div class="abstract-zh">抱歉，我無法提供該段落的翻譯，因為它不完整且缺乏上下文。如果您能提供更完整的摘要或具體內容，我將很樂意幫助您進行翻譯。</div>
+      <div class="links">
+        
+        
+      </div>
+    </div>
+
+    <div class="paper" id="paper-1" onclick="togglePaper(event, 1)">
+      <div class="paper-top">
+        <input type="checkbox" id="cb-1" onclick="event.stopPropagation(); updateCount();">
+        <div class="paper-num">2</div>
         <div class="paper-title"><a href="https://gut.bmj.com/content/75/5/920.abstract" target="_blank" onclick="event.stopPropagation();">Parasutterella excrementihominis exacerbates experimental colitis and colitis-associated colorectal cancer via pathogenic NETosis activation</a></div>
       </div>
       <div class="badges">
@@ -257,32 +282,7 @@
       <div class="section-label">Abstract</div>
       <div class="abstract-text">… axis offers novel therapeutic strategies for inflammation-driven colorectal carcinogenesis. … immune responses and gut mucosal inflammation.19 This study examines how P. …</div>
       <div class="section-label">中文摘要</div>
-      <div class="abstract-zh">該研究探討了P. … 軸提供了針對由炎症驅動的結直腸癌發生的新型治療策略，以及免疫反應和腸道黏膜炎症。19</div>
-      <div class="links">
-        
-        
-      </div>
-    </div>
-
-    <div class="paper" id="paper-1" onclick="togglePaper(event, 1)">
-      <div class="paper-top">
-        <input type="checkbox" id="cb-1" onclick="event.stopPropagation(); updateCount();">
-        <div class="paper-num">2</div>
-        <div class="paper-title"><a href="https://link.springer.com/article/10.1186/s12957-025-04165-7" target="_blank" onclick="event.stopPropagation();">Effect of hyperthermic intraperitoneal chemotherapy on patients with advanced colorectal cancer: a systematic review and meta-analysis</a></div>
-      </div>
-      <div class="badges">
-        
-        <span class="badge badge-type">Meta-Analysis</span>
-        
-        
-      </div>
-      <div class="meta">
-        📰 World Journal of … &nbsp; 📅 2026 &nbsp; 👥 Z Su, Y Guo, X Ru, X Wang, Q Mao
-      </div>
-      <div class="section-label">Abstract</div>
-      <div class="abstract-text">… for colorectal cancer peritoneal metastases? Dis Colon Rectum. 2018;61(9):1026–34. … colorectal cancer: true peritoneal tumor penetration is associated with peritoneal metastases…</div>
-      <div class="section-label">中文摘要</div>
-      <div class="abstract-zh">… 針對結直腸癌腹膜轉移的研究？《結腸直腸外科期刊》。2018;61(9):1026–34。… 結直腸癌：真正的腹膜腫瘤穿透與腹膜轉移有關…</div>
+      <div class="abstract-zh">… 軸心提供了針對由炎症驅動的結直腸癌發生的新型治療策略。… 免疫反應和腸道黏膜炎症。19 本研究探討了 P. …</div>
       <div class="links">
         
         
@@ -293,31 +293,6 @@
       <div class="paper-top">
         <input type="checkbox" id="cb-2" onclick="event.stopPropagation(); updateCount();">
         <div class="paper-num">3</div>
-        <div class="paper-title"><a href="https://www.sciencedirect.com/science/article/pii/S221074012600063X" target="_blank" onclick="event.stopPropagation();">Predictive utility of the C-Reactive Protein-Albumin-Lymphocyte (CALLY) Index in Colorectal Cancer: A Meta-Analysis</a></div>
-      </div>
-      <div class="badges">
-        
-        <span class="badge badge-type">Meta-Analysis</span>
-        
-        
-      </div>
-      <div class="meta">
-        📰 Clinics and Research in Hepatology and … &nbsp; 📅 2026 &nbsp; 👥 X Li, T Chu, W Chen, L Zhang
-      </div>
-      <div class="section-label">Abstract</div>
-      <div class="abstract-text">Objective The prognostic performance of the C-reactive protein-albumin-lymphocyte (CALLY) index in individuals with colorectal cancer (CRC) remains inconsistent. Therefore, this …</div>
-      <div class="section-label">中文摘要</div>
-      <div class="abstract-zh">目標 C-反應蛋白-白蛋白-淋巴細胞指數（CALLY指數）在結直腸癌（CRC）患者中的預後表現仍然不一致。因此，本研究…</div>
-      <div class="links">
-        
-        
-      </div>
-    </div>
-
-    <div class="paper" id="paper-3" onclick="togglePaper(event, 3)">
-      <div class="paper-top">
-        <input type="checkbox" id="cb-3" onclick="event.stopPropagation(); updateCount();">
-        <div class="paper-num">4</div>
         <div class="paper-title"><a href="https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2026.1616016/full" target="_blank" onclick="event.stopPropagation();">Prognostic value of systemic immune-inflammation index for colorectal cancer: a systematic review and meta-analysis</a></div>
       </div>
       <div class="badges">
@@ -332,17 +307,17 @@
       <div class="section-label">Abstract</div>
       <div class="abstract-text">… -inflammation index (SII) has gained attention as a prognostic biomarker in colorectal cancer (CRC), existing studies … Studies that satisfying the inclusion and exclusion criteria were …</div>
       <div class="section-label">中文摘要</div>
-      <div class="abstract-zh">… 炎症指數 (SII) 作為結直腸癌 (CRC) 的預後生物標記受到關注，現有研究 … 符合納入和排除標準的研究為 …</div>
+      <div class="abstract-zh">… 炎症指數 (SII) 作為結直腸癌 (CRC) 的預後生物標記受到關注，現有研究 … 符合納入和排除標準的研究 …</div>
       <div class="links">
         
         
       </div>
     </div>
 
-    <div class="paper" id="paper-4" onclick="togglePaper(event, 4)">
+    <div class="paper" id="paper-3" onclick="togglePaper(event, 3)">
       <div class="paper-top">
-        <input type="checkbox" id="cb-4" onclick="event.stopPropagation(); updateCount();">
-        <div class="paper-num">5</div>
+        <input type="checkbox" id="cb-3" onclick="event.stopPropagation(); updateCount();">
+        <div class="paper-num">4</div>
         <div class="paper-title"><a href="https://academic.oup.com/crohnscolitis360/article-abstract/8/1/otag001/8423533" target="_blank" onclick="event.stopPropagation();">Awareness of inflammatory bowel disease-associated colorectal cancer risk and its management in patients with inflammatory bowel disease: a systematic review</a></div>
       </div>
       <div class="badges">
@@ -357,17 +332,17 @@
       <div class="section-label">Abstract</div>
       <div class="abstract-text">… Given the limited research on the depth of knowledge people with inflammatory bowel disease have about their risk of colorectal cancer and its management, more studies are needed …</div>
       <div class="section-label">中文摘要</div>
-      <div class="abstract-zh">鑒於對於炎症性腸病患者對其結直腸癌風險及管理知識的研究仍然有限，因此需要更多的研究。</div>
+      <div class="abstract-zh">鑒於目前對於炎症性腸病患者對其結直腸癌風險及管理知識的研究仍然有限，亟需進一步的研究。</div>
       <div class="links">
         
         
       </div>
     </div>
 
-    <div class="paper" id="paper-5" onclick="togglePaper(event, 5)">
+    <div class="paper" id="paper-4" onclick="togglePaper(event, 4)">
       <div class="paper-top">
-        <input type="checkbox" id="cb-5" onclick="event.stopPropagation(); updateCount();">
-        <div class="paper-num">6</div>
+        <input type="checkbox" id="cb-4" onclick="event.stopPropagation(); updateCount();">
+        <div class="paper-num">5</div>
         <div class="paper-title"><a href="https://doi.org/10.1186/s13020-026-01381-5" target="_blank" onclick="event.stopPropagation();">Thlaspi arvense attenuates colitis-associated colorectal tumorigenesis through suppression of neutrophil recruitment via the NOD/NF-&#x3ba;B pathway.</a></div>
       </div>
       <div class="badges">
@@ -382,17 +357,17 @@
       <div class="section-label">Abstract</div>
       <div class="abstract-text">In colitis-associated colorectal cancer (CAC), chronic inflammation is the primary driver of tumorigenesis. A critical event in this process is the massive recruitment of neutrophils, which, while part of the host defense, can paradoxically fuel cancer progression. Excessive neutrophil infiltration contributes to sustained mucosal damage through the release of pro-inflammatory mediators and shapes a tumor-promoting microenvironment. Despite their recognized role, therapeutic strategies specifically targeting pathogenic neutrophil recruitment in CAC are limited. Thlaspi arvense (TA), a traditional medicinal plant, possesses purported anti-inflammatory properties, suggesting its potential utility against CAC. Therefore, this study was designed to evaluate the efficacy of TA in preventing CAC and to delineate its mechanism of action, particularly its impact on neutrophil-driven inflammation. An azoxymethane/dextran sulfate sodium (AOM/DSS) mouse model of CAC was employed. Mice were administered with TA to evaluate its effects on disease severity, as gauged by body weight change, colon length, tumor burden, and survival rate. Histological and immunofluorescence staining were performed to assess mucosal integrity and the expression of tight junction proteins (ZO-1, Claudin-1). Neutrophil infiltration was quantified by flow cytometry and immunofluorescence. The levels of pro-inflammatory cytokines (IL-6, TNF-&#x3b1;, IL-1&#x3b2;, IFN-&#x3b3;) and neutrophil chemoattractants (CXCL1/2) were measured using ELISA and qPCR, respectively. To specifically probe the CXCL1/2-CXCR2 axis, a CXCR2 inhibitor was used as an interventional control. Mechanistic insights were gained through RNA sequencing and Western blot analysis. Furthermore, molecular docking was performed to predict the binding affinity of key TA constituents to core proteins within the NOD/NF-&#x3ba;B pathway. The AOM/DSS mouse model successfully recapitulated the hallmark features of CAC. Treatment with TA, especially at higher doses, markedly attenuated the pathological manifestations, including body weight loss, colon shortening, adenoma formation, and severe inflammatory responses. Consistently, the TA administration restored mucosal integrity and significantly upregulated the expression of tight junction proteins ZO-1 and Claudin-1. At a functional level, TA significantly reduced the production of the neutrophil chemoattractants CXCL1 and CXCL2, which and consequently impaired the interaction with CXCR2 on neutrophils and led to a substantial decrease in neutrophil recruitment. Mechanistic investigation further demonstrated that TA exerted its effects by suppressing the activation of key proteins within the NOD/NF-&#x3ba;B signaling pathway. This suppression resulted in diminished CXCL1/2 expression and a consequent attenuation of the neutrophil-driven pro-tumorigenic microenvironment. We conclude that TA attenuates colitis-associated carcinogenesis by inhibiting the NOD/NF-&#x3ba;B pathway and its downstream CXCL1/2-CXCR2-mediated neutrophil recruitment. This study underscores the value of targeting neutrophil-driven inflammation and positions TA as a viable natural therapeutic for preventing CAC progression.</div>
       <div class="section-label">中文摘要</div>
-      <div class="abstract-zh">在結腸炎相關的結直腸癌（CAC）中，慢性炎症是腫瘤形成的主要驅動因素。這一過程中的一個關鍵事件是大量中性粒細胞的招募，這些細胞雖然是宿主防禦的一部分，但卻可以矛盾地促進癌症進展。過度的中性粒細胞浸潤通過釋放促炎介質，導致持續的黏膜損傷，並塑造一個促腫瘤的微環境。儘管它們的作用已被認可，但專門針對CAC中致病性中性粒細胞招募的治療策略仍然有限。田菁（Thlaspi arvense, TA）是一種傳統藥用植物，具有宣稱的抗炎特性，暗示其在對抗CAC方面的潛在用途。因此，本研究旨在評估TA在預防CAC方面的有效性，並闡明其作用機制，特別是對中性粒細胞驅動的炎症的影響。我們使用了氮芥/硫酸鈉（AOM/DSS）小鼠模型來研究CAC。小鼠接受TA治療，以評估其對疾病嚴重程度的影響，通過體重變化、結腸長度、腫瘤負擔和存活率來衡量。進行了組織學和免疫熒光染色，以評估黏膜完整性和緊密連接蛋白（ZO-1, Claudin-1）的表達。中性粒細胞的浸潤通過流式細胞術和免疫熒光定量。促炎細胞因子（IL-6, TNF-α, IL-1β, IFN-γ）和中性粒細胞趨化因子（CXCL1/2）的水平分別通過ELISA和qPCR進行測量。為了特別探討CXCL1/2-CXCR2通路，使用了CXCR2抑制劑作為干預對照。通過RNA測序和西方印跡分析獲得了機制性見解。此外，還進行了分子對接，以預測TA主要成分與NOD/NF-κB通路核心蛋白的結合親和力。AOM/DSS小鼠模型成功再現了CAC的標誌性特徵。TA治療，特別是在較高劑量下，顯著減輕了病理表現，包括體重減輕、結腸縮短、腺瘤形成和嚴重的炎症反應。一致地，TA的給予恢復了黏膜完整性，並顯著上調了緊密連接蛋白ZO-1和Claudin-1的表達。在功能層面上，TA顯著減少了中性粒細胞趨化因子CXCL1和CXCL2的產生，從而削弱了與中性粒細胞上的CXCR2的相互作用，並導致中性粒細胞招募的顯著減少。機制研究進一步表明，TA通過抑制NOD/NF-κB信號通路中關鍵蛋白的活化來發揮其作用。這種抑制導致CXCL1/2表達減少，並隨之減弱了中性粒細胞驅動的促腫瘤微環境。我們得出結論，TA通過抑制NOD/NF-κB通路及其下游的CXCL1/2-CXCR2介導的中性粒細胞招募，減輕了結腸炎相關的致癌作用。本研究強調了針對中性粒細胞驅動的炎症的價值，並將TA定位為預防CAC進展的可行天然療法。</div>
+      <div class="abstract-zh">在結腸炎相關的結直腸癌（CAC）中，慢性炎症是腫瘤形成的主要驅動因素。這一過程中的一個關鍵事件是大量中性粒細胞的招募，這些細胞雖然是宿主防禦的一部分，但卻可能矛盾地促進癌症進展。過度的中性粒細胞浸潤通過釋放促炎介質對黏膜造成持續損傷，並塑造出促腫瘤的微環境。儘管它們的作用已被認可，但專門針對CAC中病理性中性粒細胞招募的治療策略仍然有限。田菁（Thlaspi arvense, TA）是一種傳統藥用植物，具有潛在的抗炎特性，這表明它在對抗CAC方面的潛在應用。因此，本研究旨在評估TA在預防CAC方面的有效性，並闡明其作用機制，特別是對中性粒細胞驅動的炎症的影響。我們使用了氮芥/右旋糖酐硫酸鈉（AOM/DSS）小鼠模型來研究CAC。小鼠接受TA治療，以評估其對疾病嚴重程度的影響，通過體重變化、結腸長度、腫瘤負擔和存活率來衡量。進行了組織學和免疫熒光染色，以評估黏膜完整性和緊密連接蛋白（ZO-1、Claudin-1）的表達。中性粒細胞的浸潤通過流式細胞術和免疫熒光定量。促炎細胞因子（IL-6、TNF-α、IL-1β、IFN-γ）和中性粒細胞趨化因子（CXCL1/2）的水平分別使用ELISA和qPCR進行測定。為了專門探討CXCL1/2-CXCR2通路，使用CXCR2抑制劑作為干預對照。通過RNA測序和西方印跡分析獲得了機制性見解。此外，還進行了分子對接，以預測TA主要成分與NOD/NF-κB通路核心蛋白的結合親和力。AOM/DSS小鼠模型成功再現了CAC的標誌性特徵。TA治療，特別是在較高劑量下，顯著減輕了病理表現，包括體重減輕、結腸縮短、腺瘤形成和嚴重的炎症反應。TA的給予一致性地恢復了黏膜完整性，並顯著上調了緊密連接蛋白ZO-1和Claudin-1的表達。在功能層面上，TA顯著減少了中性粒細胞趨化因子CXCL1和CXCL2的產生，從而削弱了它們與中性粒細胞上的CXCR2的相互作用，導致中性粒細胞招募的顯著減少。機制研究進一步顯示，TA通過抑制NOD/NF-κB信號通路中關鍵蛋白的活化來發揮其作用。這一抑制導致CXCL1/2表達的減少，從而減弱了中性粒細胞驅動的促腫瘤微環境。我們得出結論，TA通過抑制NOD/NF-κB通路及其下游的CXCL1/2-CXCR2介導的中性粒細胞招募來減輕結腸炎相關的致癌作用。本研究強調了針對中性粒細胞驅動的炎症的價值，並將TA定位為預防CAC進展的可行天然療法。</div>
       <div class="links">
         <a href="https://doi.org/10.1186/s13020-026-01381-5" target="_blank">DOI ↗</a>
         <a href="https://pubmed.ncbi.nlm.nih.gov/41998751/" target="_blank">PubMed ↗</a>
       </div>
     </div>
 
-    <div class="paper" id="paper-6" onclick="togglePaper(event, 6)">
+    <div class="paper" id="paper-5" onclick="togglePaper(event, 5)">
       <div class="paper-top">
-        <input type="checkbox" id="cb-6" onclick="event.stopPropagation(); updateCount();">
-        <div class="paper-num">7</div>
+        <input type="checkbox" id="cb-5" onclick="event.stopPropagation(); updateCount();">
+        <div class="paper-num">6</div>
         <div class="paper-title"><a href="https://doi.org/10.1002/advs.202520000" target="_blank" onclick="event.stopPropagation();">Tumor-Derived Alpha-1 Antitrypsin Promotes Liver Metastasis of Colorectal Cancer Through the Neutrophil Extracellular Traps-CCDC25 Pathway.</a></div>
       </div>
       <div class="badges">
@@ -407,17 +382,17 @@
       <div class="section-label">Abstract</div>
       <div class="abstract-text">Liver metastasis is a leading cause of mortality in colorectal cancer (CRC), where the inflammatory tumor microenvironment, specifically neutrophil infiltration, significantly promotes metastatic colonization. This study reveals a pro-metastatic role for alpha-1 antitrypsin (A1AT) in CRC liver metastasis via a dual mechanism involving neutrophil extracellular traps (NETs) and the transmembrane protein coiled-coil domain-containing protein 25 (CCDC25). We demonstrate that A1AT, highly expressed by a liver-metastatic CRC cell line established in a mouse model, directly induces NETs' formation. Simultaneously, intracellular A1AT binds to CCDC25, preventing its lysosomal degradation and thereby increasing its surface expression. This A1AT-mediated upregulation of CCDC25 sensitizes tumor cells to surrounding NET-DNA. Upon engagement, the ILK-RAC1-CDC42 signaling cascade activates, driving extensive cytoskeletal rearrangement and enhancing the migratory and invasive capabilities of CRC cells. Collectively, our findings elucidate a mechanism wherein tumor cells exploit the A1AT-NET-CCDC25 axis to manipulate neutrophil function and boost metastatic potential. This axis represents a critical driver of CRC liver metastasis, offering novel biomarkers and promising therapeutic targets.</div>
       <div class="section-label">中文摘要</div>
-      <div class="abstract-zh">肝轉移是結直腸癌（CRC）死亡率的主要原因，其中炎症性腫瘤微環境，特別是中性粒細胞的浸潤，顯著促進了轉移性殖民的形成。本研究揭示了α-1抗胰蛋白酶（A1AT）在CRC肝轉移中的促轉移作用，這一作用通過涉及中性粒細胞外陷阱（NETs）和跨膜蛋白螺旋-螺旋結構域蛋白25（CCDC25）的雙重機制實現。我們證明，A1AT在一個小鼠模型中建立的肝轉移CRC細胞系中表達量高，並能直接誘導NETs的形成。同時，細胞內的A1AT與CCDC25結合，防止其被溶酶體降解，從而增加其表面表達。這種A1AT介導的CCDC25上調使腫瘤細胞對周圍的NET-DNA變得敏感。一旦結合，ILK-RAC1-CDC42信號傳導級聯反應被激活，驅動廣泛的細胞骨架重組，增強CRC細胞的遷移和侵襲能力。總體而言，我們的研究結果闡明了一個機制，即腫瘤細胞利用A1AT-NET-CCDC25軸來操控中性粒細胞功能並提升轉移潛力。這一軸是CRC肝轉移的重要驅動因素，提供了新的生物標記和有前景的治療靶點。</div>
+      <div class="abstract-zh">肝轉移是結直腸癌（CRC）死亡的主要原因，其中炎性腫瘤微環境，特別是中性粒細胞的浸潤，顯著促進了轉移性殖民的形成。本研究揭示了α-1抗胰蛋白酶（A1AT）在CRC肝轉移中的促轉移作用，涉及中性粒細胞外陷阱（NETs）和跨膜蛋白螺旋-螺旋結構域含量蛋白25（CCDC25）的雙重機制。我們證明了A1AT在一個在小鼠模型中建立的肝轉移CRC細胞系中高表達，能直接誘導NETs的形成。同時，細胞內的A1AT與CCDC25結合，防止其被溶酶體降解，從而增加其表面表達。這種A1AT介導的CCDC25上調使腫瘤細胞對周圍的NET-DNA變得敏感。一旦結合，ILK-RAC1-CDC42信號通路被激活，驅動廣泛的細胞骨架重組，增強CRC細胞的遷移和侵襲能力。總體而言，我們的研究結果闡明了一種機制，腫瘤細胞利用A1AT-NET-CCDC25軸來操控中性粒細胞功能並提升轉移潛力。這一軸線代表了CRC肝轉移的一個關鍵驅動因子，提供了新的生物標記和有前景的治療靶點。</div>
       <div class="links">
         <a href="https://doi.org/10.1002/advs.202520000" target="_blank">DOI ↗</a>
         <a href="https://pubmed.ncbi.nlm.nih.gov/41980200/" target="_blank">PubMed ↗</a>
       </div>
     </div>
 
-    <div class="paper" id="paper-7" onclick="togglePaper(event, 7)">
+    <div class="paper" id="paper-6" onclick="togglePaper(event, 6)">
       <div class="paper-top">
-        <input type="checkbox" id="cb-7" onclick="event.stopPropagation(); updateCount();">
-        <div class="paper-num">8</div>
+        <input type="checkbox" id="cb-6" onclick="event.stopPropagation(); updateCount();">
+        <div class="paper-num">7</div>
         <div class="paper-title"><a href="https://doi.org/10.1002/cbic.202600004" target="_blank" onclick="event.stopPropagation();">Radioiodination of Two Carborane-Based Dual Cyclooxygenase-2/5-Lipoxygenase Inhibitors and Their In Vitro and In Vivo Evaluation.</a></div>
       </div>
       <div class="badges">
@@ -432,17 +407,17 @@
       <div class="section-label">Abstract</div>
       <div class="abstract-text">Cyclooxygenase-2 (COX-2) and 5-lipoxygenase (5-LO) are key enzymes in prostanoid and leukotriene signaling and are overexpressed in various cancers, correlating with malignancy and metastasis. This renders them promising molecular targets for radiotracer development. In this study, isomeric closo-dicarbadodecaborane(12)-based dual COX-2/5-LO inhibitors (1 and 2) served as scaffolds for iodine-123-labeling. Iodinated derivatives 3 and 4 inhibited 5-LO more potently than COX-2 in vitro (IC50 0.62 &#xb5;M and 41.3 &#xb5;M (3); 0.54 &#xb5;M and 67.7 &#xb5;M (4)). Radioiodination yielded 39%-71% of [123I]3 and [123I]4; and the formulations were stabilized with antioxidants. Cellular uptake of [123I]3 and [123I]4 was evaluated in human cells with distinct COX-2 and 5-LO expression: U87 glioblastoma, HT-29 colorectal carcinoma cells, THP-1 monocytes (MC) and macrophages. Consistent with the observed inhibitory potency, the uptake of the radiotracers proved to be independent of COX-2 expression. In contrast, it was influenced by 5-LO expression in tumor but not inflammatory cells. Single-photon emission computed tomography imaging in tumor xenograft mouse models revealed no tumor retention of [123I]3 and [123I]4 due to rapid metabolism via radiodeiodination. Despite successful radiosynthesis and in vitro evaluation of iodine-123-labeled COX-2/5-LO inhibitors, improved inhibitory activity and stability are required for development of suitable radiotracers.</div>
       <div class="section-label">中文摘要</div>
-      <div class="abstract-zh">環氧合酶-2 (COX-2) 和 5-脂氧合酶 (5-LO) 是前列腺素和白三烯信號傳遞中的關鍵酶，並在各種癌症中表現過度，與惡性程度和轉移相關。因此，它們成為放射性示蹤劑開發的有前景的分子靶點。在本研究中，基於異構體 closo-dicarbadodecaborane(12) 的雙重 COX-2/5-LO 抑制劑 (1 和 2) 作為碘-123 標記的支架。碘化衍生物 3 和 4 在體外對 5-LO 的抑制作用比對 COX-2 更強 (IC50 0.62 μM 和 41.3 μM (3); 0.54 μM 和 67.7 μM (4))。放射性碘化產物的產率為 39%-71% 的 [123I]3 和 [123I]4，並且這些配方經抗氧化劑穩定。對於在人類細胞中具有不同 COX-2 和 5-LO 表達的細胞 (如 U87 神經膠瘤、HT-29 結直腸癌細胞、THP-1 單核細胞 (MC) 和巨噬細胞) 的 [123I]3 和 [123I]4 的細胞攝取進行了評估。與觀察到的抑制效力一致，放射性示蹤劑的攝取被證明與 COX-2 表達無關。相反，在腫瘤細胞中，攝取受到 5-LO 表達的影響，但在炎症細胞中則不然。在腫瘤異種移植小鼠模型中的單光子發射計算機斷層掃描影像顯示，由於通過放射性去碘化的快速代謝，未能在腫瘤中保留 [123I]3 和 [123I]4。儘管成功合成了碘-123 標記的 COX-2/5-LO 抑制劑並進行了體外評估，但仍需改進抑制活性和穩定性，以開發合適的放射性示蹤劑。</div>
+      <div class="abstract-zh">環氧合酶-2（COX-2）和5-脂氧合酶（5-LO）是前列腺素和白三烯信號傳導中的關鍵酶，並在各種癌症中表現過度，與惡性程度和轉移相關。因此，它們成為放射性示蹤劑開發的有前景的分子靶點。在本研究中，基於異構體的closo-dicarbadodecaborane(12)的雙重COX-2/5-LO抑制劑（1和2）作為碘-123標記的支架。碘化衍生物3和4在體外對5-LO的抑制作用比對COX-2更強（IC50 0.62 μM和41.3 μM（3）；0.54 μM和67.7 μM（4））。放射性碘化產物的產率為39%-71%的[123I]3和[123I]4，並且這些配方用抗氧化劑進行了穩定化。在具有不同COX-2和5-LO表達的人類細胞中評估了[123I]3和[123I]4的細胞攝取：U87膠質母細胞瘤、HT-29結腸癌細胞、THP-1單核細胞（MC）和巨噬細胞。與觀察到的抑制效力一致，放射性示蹤劑的攝取被證明與COX-2表達無關。相反，腫瘤細胞中的攝取受到5-LO表達的影響，而在炎症細胞中則不受影響。在腫瘤異種移植小鼠模型中進行的單光子發射計算機斷層掃描成像顯示，由於通過放射性去碘化的快速代謝，未見[123I]3和[123I]4在腫瘤中的滯留。儘管成功合成了碘-123標記的COX-2/5-LO抑制劑並進行了體外評估，但仍需改進其抑制活性和穩定性，以開發合適的放射性示蹤劑。</div>
       <div class="links">
         <a href="https://doi.org/10.1002/cbic.202600004" target="_blank">DOI ↗</a>
         <a href="https://pubmed.ncbi.nlm.nih.gov/41918160/" target="_blank">PubMed ↗</a>
       </div>
     </div>
 
-    <div class="paper" id="paper-8" onclick="togglePaper(event, 8)">
+    <div class="paper" id="paper-7" onclick="togglePaper(event, 7)">
       <div class="paper-top">
-        <input type="checkbox" id="cb-8" onclick="event.stopPropagation(); updateCount();">
-        <div class="paper-num">9</div>
+        <input type="checkbox" id="cb-7" onclick="event.stopPropagation(); updateCount();">
+        <div class="paper-num">8</div>
         <div class="paper-title"><a href="https://doi.org/10.1016/j.jep.2026.121657" target="_blank" onclick="event.stopPropagation();">Sanghuangporus vaninii extract exerts dual anti-tumor effects in colitis-associated colorectal cancer by direct cytotoxicity and macrophage reprogramming via the PPAR&#x3b3;/NF-&#x3ba;B axis.</a></div>
       </div>
       <div class="badges">
@@ -457,10 +432,35 @@
       <div class="section-label">Abstract</div>
       <div class="abstract-text">Sanghuangporus vaninii (SH) is a medicinal mushroom used in traditional Chinese medicine to treat conditions described in ancient texts as "Zheng Jia Ji Ju" and "Xue Li". These terms are understood to be analogous to tumors and hematochezia, respectively. Nevertheless, the therapeutic potential and precise mechanisms of SH in inhibiting colitis-associated malignant transformation remain to be elucidated. This study aimed to evaluate the antitumor effect of SH on colitis-associated colorectal cancer (CAC) and to delineate the fundamental mechanisms. The therapeutic efficacy of SH was validated using an AOM/DSS-induced CAC mouse model. Cytokine levels were quantified by ELISA. To identify the potential targets of SH, a network pharmacology approach was utilized. Subsequently, in vitro assays assessed the effects of SH on the viability, colony formation, along with cell cycle distribution of colorectal cancer (CRC) cells. A macrophage-CRC cell co-culture system was established to model an inflammatory microenvironment. The molecular mechanisms were elucidated through a series of assays, including flow cytometry, immunohistochemistry (IHC), immunofluorescence (IF), western blotting (WB), RT-qPCR, and co-immunoprecipitation (Co-IP). SH treatment dose-dependently suppressed colitis-associated carcinogenesis in AOM/DSS mice, improving body weight, colon length, and survival, while reducing tumor number and disease activity index. In colon tissues and serum, SH rebalanced the cytokine profile by suppressing positive regulators of inflammation (IL-6, IL-1&#x3b2;, TNF-&#x3b1;) and enhancing negative regulators of inflammation (IL-10, TGF-&#x3b2;). Network pharmacological analysis identified the PPAR&#x3b3;/NF-&#x3ba;B axis as the core pathway. This was validated in vitro and in vivo, where SH inhibited CRC cell proliferation, triggered cell cycle arrest, and promoted macrophage polarization towards an anti-inflammatory and pro-repair M2 phenotype. Mechanistically, WB, IHC, IF, and Co-IP confirmed that SH upregulated PPAR&#x3b3; expression and enhanced its interaction with NF-&#x3ba;B p65, thereby inhibiting NF-&#x3ba;B activation and its downstream inflammatory and proliferative signaling. SH ameliorates CAC through a dual mechanism: directly inhibiting tumor cell proliferation and modulating tumor-associated macrophages towards an anti-inflammatory, tissue-repair phenotype. These effects depend critically on activation of the PPAR&#x3b3;/NF-&#x3ba;B axis, which effectively intervenes in the inflammation-to-cancer cascade.</div>
       <div class="section-label">中文摘要</div>
-      <div class="abstract-zh">Sanghuangporus vaninii (SH) 是一種在傳統中醫中用於治療古代文獻中所描述的「正家積聚」和「血痢」等病症的藥用蘑菇。這些術語被理解為類似於腫瘤和便血。然而，SH 在抑制與結腸炎相關的惡性轉化方面的治療潛力及其精確機制仍需進一步闡明。本研究旨在評估 SH 對結腸炎相關結直腸癌（CAC）的抗腫瘤效果並闡明其基本機制。SH 的治療效果通過 AOM/DSS 誘導的 CAC 小鼠模型進行驗證。細胞因子水平通過 ELISA 進行定量。為了識別 SH 的潛在靶點，採用了網絡藥理學方法。隨後，體外實驗評估了 SH 對結直腸癌（CRC）細胞的存活率、克隆形成及細胞週期分佈的影響。建立了巨噬細胞-CRC 細胞共培養系統以模擬炎症微環境。通過一系列實驗，包括流式細胞術、免疫組織化學（IHC）、免疫螢光（IF）、西方印跡（WB）、RT-qPCR 和共同免疫沉澱（Co-IP），闡明了分子機制。SH 處理以劑量依賴性方式抑制了 AOM/DSS 小鼠的結腸炎相關致癌作用，改善了體重、結腸長度和存活率，同時減少了腫瘤數量和疾病活動指數。在結腸組織和血清中，SH 通過抑制炎症的正調節因子（IL-6、IL-1β、TNF-α）和增強炎症的負調節因子（IL-10、TGF-β）來重新平衡細胞因子譜。網絡藥理學分析確定 PPARγ/NF-κB 軸為核心通路。這一結果在體內外均得到了驗證，SH 抑制了 CRC 細胞增殖，誘導了細胞週期停滯，並促進了巨噬細胞向抗炎和促修復的 M2 表型極化。在機制上，WB、IHC、IF 和 Co-IP 確認 SH 上調了 PPARγ 表達並增強了其與 NF-κB p65 的相互作用，從而抑制了 NF-κB 的活化及其下游的炎症和增殖信號。SH 通過雙重機制改善 CAC：直接抑制腫瘤細胞增殖並調節腫瘤相關巨噬細胞向抗炎和組織修復表型。這些效果在很大程度上依賴於 PPARγ/NF-κB 軸的激活，該軸有效地介入了炎症到癌症的級聯反應。</div>
+      <div class="abstract-zh">Sanghuangporus vaninii (SH) 是一種藥用蘑菇，傳統中醫用於治療古籍中所描述的「正家積聚」和「血痢」等病症。這些術語被理解為類似腫瘤和血便。然而，SH 在抑制與結腸炎相關的惡性轉化方面的治療潛力及其精確機制仍需進一步闡明。本研究旨在評估 SH 對結腸炎相關結直腸癌 (CAC) 的抗腫瘤效果，並闡明其基本機制。使用 AOM/DSS 誘導的 CAC 小鼠模型驗證了 SH 的治療效果。通過 ELISA 定量測定細胞因子水平。為了識別 SH 的潛在靶點，採用了網絡藥理學方法。隨後，進行了體外實驗，以評估 SH 對結直腸癌 (CRC) 細胞的活力、克隆形成及細胞週期分佈的影響。建立了巨噬細胞與 CRC 細胞的共培養系統，以模擬炎症微環境。通過一系列實驗，包括流式細胞術、免疫組織化學 (IHC)、免疫螢光 (IF)、西方印跡 (WB)、RT-qPCR 和共免疫沉澱 (Co-IP) 來闡明分子機制。SH 處理以劑量依賴的方式抑制了 AOM/DSS 小鼠的結腸炎相關致癌作用，改善了體重、結腸長度和存活率，同時減少了腫瘤數量和疾病活動指數。在結腸組織和血清中，SH 通過抑制炎症的正調節因子 (IL-6、IL-1β、TNF-α) 並增強炎症的負調節因子 (IL-10、TGF-β) 來重新平衡細胞因子譜。網絡藥理學分析確定了 PPARγ/NF-κB 軸為核心通路。這一結果在體內外均得到了驗證，SH 抑制了 CRC 細胞增殖，誘導了細胞週期停滯，並促進了巨噬細胞向抗炎和促修復的 M2 表型極化。在機制上，WB、IHC、IF 和 Co-IP 確認 SH 上調了 PPARγ 表達並增強了其與 NF-κB p65 的相互作用，從而抑制了 NF-κB 的活化及其下游的炎症和增殖信號。SH 通過雙重機制改善 CAC：直接抑制腫瘤細胞增殖和調節腫瘤相關巨噬細胞向抗炎、組織修復表型。這些效果在很大程度上依賴於 PPARγ/NF-κB 軸的活化，該軸有效介入了炎症到癌症的級聯反應。</div>
       <div class="links">
         <a href="https://doi.org/10.1016/j.jep.2026.121657" target="_blank">DOI ↗</a>
         <a href="https://pubmed.ncbi.nlm.nih.gov/41974235/" target="_blank">PubMed ↗</a>
+      </div>
+    </div>
+
+    <div class="paper" id="paper-8" onclick="togglePaper(event, 8)">
+      <div class="paper-top">
+        <input type="checkbox" id="cb-8" onclick="event.stopPropagation(); updateCount();">
+        <div class="paper-num">9</div>
+        <div class="paper-title"><a href="https://aacrjournals.org/cancerres/article/86/7_Supplement/4476/777724" target="_blank" onclick="event.stopPropagation();">Repurposing PARP inhibitors in molecularly defined subgroups of peritoneal metastatic colorectal cancer (pmCRC): Preclinical analysis of patient-derived xenograft …</a></div>
+      </div>
+      <div class="badges">
+        
+        <span class="badge badge-type">Basic Research</span>
+        
+        
+      </div>
+      <div class="meta">
+        📰 Cancer … &nbsp; 📅 2026 &nbsp; 👥 M Dahlmann, B Rau, S Gül-Klein, B Brzezicha…
+      </div>
+      <div class="section-label">Abstract</div>
+      <div class="abstract-text">… Peritoneal metastatic colorectal cancer (pmCRC) has the worst outcome compared to metastatic CRC patients with metastases … of both systemic and peritoneal specific treatment, 50% …</div>
+      <div class="section-label">中文摘要</div>
+      <div class="abstract-zh">腹膜轉移性結直腸癌（pmCRC）的預後最差，相較於其他有轉移的結直腸癌患者……無論是全身性治療還是針對腹膜的特定治療，50%……</div>
+      <div class="links">
+        
+        
       </div>
     </div>
 
@@ -482,7 +482,7 @@
       <div class="section-label">Abstract</div>
       <div class="abstract-text">… The inhibitory effect of ALC on colorectal tumor growth was further validated in a nude … In vivo experiments demonstrated that ALC effectively suppressed colorectal tumor growth in a …</div>
       <div class="section-label">中文摘要</div>
-      <div class="abstract-zh">… ALC對結直腸腫瘤生長的抑制作用在裸鼠中得到了進一步驗證… 在體內實驗中顯示，ALC有效抑制了結直腸腫瘤的生長…</div>
+      <div class="abstract-zh">… ALC對結直腸腫瘤生長的抑制作用在裸鼠中進一步得到驗證 … 体内實驗顯示，ALC有效抑制了結直腸腫瘤的生長 …</div>
       <div class="links">
         
         
@@ -509,6 +509,24 @@
 const ARTICLES = [
   {
     "id": 0,
+    "title": "ORCHESTRA Hits a Sour Note for Debulking in Metastatic Colorectal Cancer",
+    "journal": "JAMA",
+    "impactFactor": 63.1,
+    "studyType": "Other",
+    "isAsiaPriority": false,
+    "countries": [],
+    "pubDate": "2026",
+    "authors": "M Fakih",
+    "abstract": "… resectable liver metastases from colorectal cancer (EORTC … surgery alone for colorectal peritoneal metastases (PRODIGE 7)… resection of pulmonary metastases from colorectal cancer: a …",
+    "abstractZh": "抱歉，我無法提供該段落的翻譯，因為它不完整且缺乏上下文。如果您能提供更完整的摘要或具體內容，我將很樂意幫助您進行翻譯。",
+    "doi": "",
+    "pmid": "",
+    "link": "https://jamanetwork.com/journals/jama/article-abstract/2846538",
+    "insight": "EN: The results suggest that debulking surgery may not be beneficial for all patients with metastatic colorectal cancer, particularly those with liver metastases. \nZH: 這些結果表明，減瘤手術對於所有轉移性結直腸癌患者可能並不有利，特別是對於肝轉移患者。\n\nEN: Future research should focus on identifying specific patient populations that may still benefit from surgical intervention. \nZH: 未來的研究應著重於識別仍可能從手術介入中受益的特定患者群體。",
+    "score": 70
+  },
+  {
+    "id": 1,
     "title": "Parasutterella excrementihominis exacerbates experimental colitis and colitis-associated colorectal cancer via pathogenic NETosis activation",
     "journal": "Gut",
     "impactFactor": 24.5,
@@ -518,51 +536,15 @@ const ARTICLES = [
     "pubDate": "2026",
     "authors": "H Tan, L Huang, J Wang, H Huang, Z Lin",
     "abstract": "… axis offers novel therapeutic strategies for inflammation-driven colorectal carcinogenesis. … immune responses and gut mucosal inflammation.19 This study examines how P. …",
-    "abstractZh": "該研究探討了P. … 軸提供了針對由炎症驅動的結直腸癌發生的新型治療策略，以及免疫反應和腸道黏膜炎症。19",
+    "abstractZh": "… 軸心提供了針對由炎症驅動的結直腸癌發生的新型治療策略。… 免疫反應和腸道黏膜炎症。19 本研究探討了 P. …",
     "doi": "",
     "pmid": "",
     "link": "https://gut.bmj.com/content/75/5/920.abstract",
-    "insight": "**Clinical Insight / 臨床啟示**  \nEN: This study highlights the role of Parasutterella excrementihominis in exacerbating colitis and promoting colorectal cancer, suggesting that targeting this pathogen could be a novel therapeutic strategy for managing inflammation-driven colorectal carcinogenesis.  \nZH: 這項研究突顯了Parasutterella excrementihominis在加劇結腸炎和促進結腸直腸癌中的作用，暗示針對這種病原體可能成為管理炎症驅動的結腸直腸癌的新療法策略。\n\n**Future Direction / 未來方向**  \nEN: Future research should focus on exploring the mechanisms of NETosis activation by P. excrementihominis and the potential for developing targeted therapies to mitigate its effects on colitis and colorectal cancer progression.  \nZH: 未來的研究應著重於探討P. excrementihominis引發NETosis的機制，以及開發針對性療法以減輕其對結腸炎和結腸直腸癌進展的影響的潛力。",
+    "insight": "EN: The findings suggest that targeting P. excrementihominis may provide a new therapeutic approach for managing colitis and preventing colorectal cancer. \nZH: 研究結果表明，針對 P. excrementihominis 可能為管理結腸炎和預防結直腸癌提供新的治療方法。\n\nEN: Future research should focus on the mechanisms by which P. excrementihominis activates NETosis and its role in cancer progression. \nZH: 未來的研究應集中於 P. excrementihominis 如何激活 NETosis 及其在癌症進展中的作用機制。",
     "score": 34.5
   },
   {
-    "id": 1,
-    "title": "Effect of hyperthermic intraperitoneal chemotherapy on patients with advanced colorectal cancer: a systematic review and meta-analysis",
-    "journal": "World Journal of …",
-    "impactFactor": 0,
-    "studyType": "Meta-Analysis",
-    "isAsiaPriority": false,
-    "countries": [],
-    "pubDate": "2026",
-    "authors": "Z Su, Y Guo, X Ru, X Wang, Q Mao",
-    "abstract": "… for colorectal cancer peritoneal metastases? Dis Colon Rectum. 2018;61(9):1026–34. … colorectal cancer: true peritoneal tumor penetration is associated with peritoneal metastases…",
-    "abstractZh": "… 針對結直腸癌腹膜轉移的研究？《結腸直腸外科期刊》。2018;61(9):1026–34。… 結直腸癌：真正的腹膜腫瘤穿透與腹膜轉移有關…",
-    "doi": "",
-    "pmid": "",
-    "link": "https://link.springer.com/article/10.1186/s12957-025-04165-7",
-    "insight": "**Clinical Insight / 臨床啟示**  \nEN: This study highlights the potential benefits of hyperthermic intraperitoneal chemotherapy (HIPEC) for patients with advanced colorectal cancer, suggesting that it may improve survival rates and quality of life in those with peritoneal metastases. The findings underscore the importance of considering HIPEC as a viable treatment option in clinical practice for this patient population.  \nZH: 這項研究突顯了高溫腹腔化學療法（HIPEC）對晚期大腸直腸癌患者的潛在益處，表明它可能改善有腹膜轉移患者的生存率和生活品質。研究結果強調在臨床實務中考慮HIPEC作為這一患者群體的可行治療選擇的重要性。\n\n**Future Direction / 未來方向**  \nEN: Future research should focus on identifying specific patient populations that may benefit the most from HIPEC, as well as optimizing treatment protocols to enhance efficacy and minimize side effects. Additionally, exploring the combination of HIPEC with other therapeutic modalities could provide insights into more comprehensive treatment strategies for advanced colorectal cancer.  \nZH: 未來的研究應著重於識別哪些特定患者群體可能最能從HIPEC中受益，以及優化治療方案以提高療效並減少副作用。此外，探索HIPEC與其他治療方式的結合可能為晚期大腸直腸癌提供更全面的治療策略的見解。",
-    "score": 15
-  },
-  {
     "id": 2,
-    "title": "Predictive utility of the C-Reactive Protein-Albumin-Lymphocyte (CALLY) Index in Colorectal Cancer: A Meta-Analysis",
-    "journal": "Clinics and Research in Hepatology and …",
-    "impactFactor": 0,
-    "studyType": "Meta-Analysis",
-    "isAsiaPriority": false,
-    "countries": [],
-    "pubDate": "2026",
-    "authors": "X Li, T Chu, W Chen, L Zhang",
-    "abstract": "Objective The prognostic performance of the C-reactive protein-albumin-lymphocyte (CALLY) index in individuals with colorectal cancer (CRC) remains inconsistent. Therefore, this …",
-    "abstractZh": "目標 C-反應蛋白-白蛋白-淋巴細胞指數（CALLY指數）在結直腸癌（CRC）患者中的預後表現仍然不一致。因此，本研究…",
-    "doi": "",
-    "pmid": "",
-    "link": "https://www.sciencedirect.com/science/article/pii/S221074012600063X",
-    "insight": "**Clinical Insight / 臨床啟示**  \nEN: This study highlights the potential of the CALLY index as a prognostic marker in colorectal cancer, suggesting that it may help clinicians better stratify patients based on their risk profiles. The findings indicate that incorporating the CALLY index into routine assessments could enhance decision-making in treatment planning.  \nZH: 這項研究突顯了CALLY指數作為結直腸癌預後標記的潛力，表明它可能有助於臨床醫生根據患者的風險概況進行更好的分層。研究結果顯示，將CALLY指數納入常規評估可能有助於改善治療計劃中的決策過程。\n\n**Future Direction / 未來方向**  \nEN: Future research should focus on validating the CALLY index in diverse populations and exploring its integration with other biomarkers to enhance prognostic accuracy. Additionally, longitudinal studies could investigate the CALLY index's role in monitoring treatment responses and disease progression in colorectal cancer patients.  \nZH: 未來的研究應該專注於在不同人群中驗證CALLY指數，並探索其與其他生物標記的整合，以提高預後準確性。此外，縱向研究可以調查CALLY指數在監測結直腸癌患者治療反應和疾病進展中的作用。",
-    "score": 15
-  },
-  {
-    "id": 3,
     "title": "Prognostic value of systemic immune-inflammation index for colorectal cancer: a systematic review and meta-analysis",
     "journal": "Frontiers in Oncology",
     "impactFactor": 0,
@@ -572,15 +554,15 @@ const ARTICLES = [
     "pubDate": "2026",
     "authors": "P Wang, H Jiang",
     "abstract": "… -inflammation index (SII) has gained attention as a prognostic biomarker in colorectal cancer (CRC), existing studies … Studies that satisfying the inclusion and exclusion criteria were …",
-    "abstractZh": "… 炎症指數 (SII) 作為結直腸癌 (CRC) 的預後生物標記受到關注，現有研究 … 符合納入和排除標準的研究為 …",
+    "abstractZh": "… 炎症指數 (SII) 作為結直腸癌 (CRC) 的預後生物標記受到關注，現有研究 … 符合納入和排除標準的研究 …",
     "doi": "",
     "pmid": "",
     "link": "https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2026.1616016/full",
-    "insight": "**Clinical Insight / 臨床啟示**  \nEN: This study highlights the systemic immune-inflammation index (SII) as a valuable prognostic biomarker for colorectal cancer, suggesting that it can aid clinicians in risk stratification and treatment planning. By incorporating SII into clinical practice, healthcare providers may improve patient outcomes through more personalized approaches.  \nZH: 這項研究突顯了系統性免疫炎症指數（SII）作為大腸癌的重要預後生物標誌物，表明它可以幫助臨床醫生進行風險分層和治療計劃。通過將SII納入臨床實踐，醫療提供者可能通過更個性化的方法改善患者的預後。\n\n**Future Direction / 未來方向**  \nEN: Future research should focus on validating the prognostic value of SII in diverse populations and exploring its potential role in guiding therapeutic decisions. Additionally, studies could investigate the mechanisms by which immune-inflammation affects colorectal cancer progression to identify new therapeutic targets.  \nZH: 未來的研究應集中於在不同人群中驗證SII的預後價值，並探索其在指導治療決策中的潛在作用。此外，研究還可以調查免疫炎症如何影響大腸癌進展的機制，以識別新的治療靶點。",
+    "insight": "EN: The findings suggest that SII could be utilized in clinical practice to stratify CRC patients based on their prognosis. \nZH: 研究結果表明，SII可以在臨床實踐中用來根據預後對CRC患者進行分層。\n\nEN: Future research should focus on validating SII in diverse populations and exploring its role in guiding treatment decisions. \nZH: 未來的研究應著重於在不同人群中驗證SII，並探討其在指導治療決策中的作用。",
     "score": 15
   },
   {
-    "id": 4,
+    "id": 3,
     "title": "Awareness of inflammatory bowel disease-associated colorectal cancer risk and its management in patients with inflammatory bowel disease: a systematic review",
     "journal": "Crohns & Colitis 360",
     "impactFactor": 0,
@@ -590,15 +572,15 @@ const ARTICLES = [
     "pubDate": "2026",
     "authors": "F Khan, C Norton, W Czuber-Dochan",
     "abstract": "… Given the limited research on the depth of knowledge people with inflammatory bowel disease have about their risk of colorectal cancer and its management, more studies are needed …",
-    "abstractZh": "鑒於對於炎症性腸病患者對其結直腸癌風險及管理知識的研究仍然有限，因此需要更多的研究。",
+    "abstractZh": "鑒於目前對於炎症性腸病患者對其結直腸癌風險及管理知識的研究仍然有限，亟需進一步的研究。",
     "doi": "",
     "pmid": "",
     "link": "https://academic.oup.com/crohnscolitis360/article-abstract/8/1/otag001/8423533",
-    "insight": "**Clinical Insight / 臨床啟示**  \nEN: This study highlights the critical gap in awareness among patients with inflammatory bowel disease (IBD) regarding their increased risk of colorectal cancer and the necessary management strategies. Improving patient education on this topic could lead to earlier detection and better outcomes for those at risk.  \nZH: 這項研究突顯了炎症性腸病（IBD）患者對其增加的結腸直腸癌風險及必要管理策略的認識差距。加強患者在這方面的教育可能有助於早期檢測，並改善高風險患者的預後。\n\n**Future Direction / 未來方向**  \nEN: Future research should focus on developing targeted educational interventions to enhance awareness and understanding of colorectal cancer risk among IBD patients. Additionally, studies could explore the effectiveness of these interventions in improving screening rates and health outcomes.  \nZH: 未來的研究應著重於開發針對性的教育介入，以提高IBD患者對結腸直腸癌風險的認識和理解。此外，研究還可以探討這些介入措施在提高篩檢率和健康結果方面的有效性。",
+    "insight": "EN: It is crucial for healthcare providers to enhance patient education regarding colorectal cancer risks in IBD to improve early detection and management. \nZH: 醫療提供者必須加強對IBD患者關於結腸直腸癌風險的教育，以改善早期檢測和管理。\n\nEN: Future research should focus on developing targeted educational interventions to raise awareness among IBD patients about their cancer risks. \nZH: 未來的研究應著重於開發針對性的教育干預措施，以提高IBD患者對其癌症風險的認識。",
     "score": 10
   },
   {
-    "id": 5,
+    "id": 4,
     "title": "Thlaspi arvense attenuates colitis-associated colorectal tumorigenesis through suppression of neutrophil recruitment via the NOD/NF-&#x3ba;B pathway.",
     "journal": "Chinese medicine",
     "impactFactor": 0,
@@ -610,15 +592,15 @@ const ARTICLES = [
     "pubDate": "2026-04-18",
     "authors": "Wang Ziwei, Wang Wenkai, Wang Chaowei, Dong Bijin, Sun Yunchuan et al.",
     "abstract": "In colitis-associated colorectal cancer (CAC), chronic inflammation is the primary driver of tumorigenesis. A critical event in this process is the massive recruitment of neutrophils, which, while part of the host defense, can paradoxically fuel cancer progression. Excessive neutrophil infiltration contributes to sustained mucosal damage through the release of pro-inflammatory mediators and shapes a tumor-promoting microenvironment. Despite their recognized role, therapeutic strategies specifically targeting pathogenic neutrophil recruitment in CAC are limited. Thlaspi arvense (TA), a traditional medicinal plant, possesses purported anti-inflammatory properties, suggesting its potential utility against CAC. Therefore, this study was designed to evaluate the efficacy of TA in preventing CAC and to delineate its mechanism of action, particularly its impact on neutrophil-driven inflammation. An azoxymethane/dextran sulfate sodium (AOM/DSS) mouse model of CAC was employed. Mice were administered with TA to evaluate its effects on disease severity, as gauged by body weight change, colon length, tumor burden, and survival rate. Histological and immunofluorescence staining were performed to assess mucosal integrity and the expression of tight junction proteins (ZO-1, Claudin-1). Neutrophil infiltration was quantified by flow cytometry and immunofluorescence. The levels of pro-inflammatory cytokines (IL-6, TNF-&#x3b1;, IL-1&#x3b2;, IFN-&#x3b3;) and neutrophil chemoattractants (CXCL1/2) were measured using ELISA and qPCR, respectively. To specifically probe the CXCL1/2-CXCR2 axis, a CXCR2 inhibitor was used as an interventional control. Mechanistic insights were gained through RNA sequencing and Western blot analysis. Furthermore, molecular docking was performed to predict the binding affinity of key TA constituents to core proteins within the NOD/NF-&#x3ba;B pathway. The AOM/DSS mouse model successfully recapitulated the hallmark features of CAC. Treatment with TA, especially at higher doses, markedly attenuated the pathological manifestations, including body weight loss, colon shortening, adenoma formation, and severe inflammatory responses. Consistently, the TA administration restored mucosal integrity and significantly upregulated the expression of tight junction proteins ZO-1 and Claudin-1. At a functional level, TA significantly reduced the production of the neutrophil chemoattractants CXCL1 and CXCL2, which and consequently impaired the interaction with CXCR2 on neutrophils and led to a substantial decrease in neutrophil recruitment. Mechanistic investigation further demonstrated that TA exerted its effects by suppressing the activation of key proteins within the NOD/NF-&#x3ba;B signaling pathway. This suppression resulted in diminished CXCL1/2 expression and a consequent attenuation of the neutrophil-driven pro-tumorigenic microenvironment. We conclude that TA attenuates colitis-associated carcinogenesis by inhibiting the NOD/NF-&#x3ba;B pathway and its downstream CXCL1/2-CXCR2-mediated neutrophil recruitment. This study underscores the value of targeting neutrophil-driven inflammation and positions TA as a viable natural therapeutic for preventing CAC progression.",
-    "abstractZh": "在結腸炎相關的結直腸癌（CAC）中，慢性炎症是腫瘤形成的主要驅動因素。這一過程中的一個關鍵事件是大量中性粒細胞的招募，這些細胞雖然是宿主防禦的一部分，但卻可以矛盾地促進癌症進展。過度的中性粒細胞浸潤通過釋放促炎介質，導致持續的黏膜損傷，並塑造一個促腫瘤的微環境。儘管它們的作用已被認可，但專門針對CAC中致病性中性粒細胞招募的治療策略仍然有限。田菁（Thlaspi arvense, TA）是一種傳統藥用植物，具有宣稱的抗炎特性，暗示其在對抗CAC方面的潛在用途。因此，本研究旨在評估TA在預防CAC方面的有效性，並闡明其作用機制，特別是對中性粒細胞驅動的炎症的影響。我們使用了氮芥/硫酸鈉（AOM/DSS）小鼠模型來研究CAC。小鼠接受TA治療，以評估其對疾病嚴重程度的影響，通過體重變化、結腸長度、腫瘤負擔和存活率來衡量。進行了組織學和免疫熒光染色，以評估黏膜完整性和緊密連接蛋白（ZO-1, Claudin-1）的表達。中性粒細胞的浸潤通過流式細胞術和免疫熒光定量。促炎細胞因子（IL-6, TNF-α, IL-1β, IFN-γ）和中性粒細胞趨化因子（CXCL1/2）的水平分別通過ELISA和qPCR進行測量。為了特別探討CXCL1/2-CXCR2通路，使用了CXCR2抑制劑作為干預對照。通過RNA測序和西方印跡分析獲得了機制性見解。此外，還進行了分子對接，以預測TA主要成分與NOD/NF-κB通路核心蛋白的結合親和力。AOM/DSS小鼠模型成功再現了CAC的標誌性特徵。TA治療，特別是在較高劑量下，顯著減輕了病理表現，包括體重減輕、結腸縮短、腺瘤形成和嚴重的炎症反應。一致地，TA的給予恢復了黏膜完整性，並顯著上調了緊密連接蛋白ZO-1和Claudin-1的表達。在功能層面上，TA顯著減少了中性粒細胞趨化因子CXCL1和CXCL2的產生，從而削弱了與中性粒細胞上的CXCR2的相互作用，並導致中性粒細胞招募的顯著減少。機制研究進一步表明，TA通過抑制NOD/NF-κB信號通路中關鍵蛋白的活化來發揮其作用。這種抑制導致CXCL1/2表達減少，並隨之減弱了中性粒細胞驅動的促腫瘤微環境。我們得出結論，TA通過抑制NOD/NF-κB通路及其下游的CXCL1/2-CXCR2介導的中性粒細胞招募，減輕了結腸炎相關的致癌作用。本研究強調了針對中性粒細胞驅動的炎症的價值，並將TA定位為預防CAC進展的可行天然療法。",
+    "abstractZh": "在結腸炎相關的結直腸癌（CAC）中，慢性炎症是腫瘤形成的主要驅動因素。這一過程中的一個關鍵事件是大量中性粒細胞的招募，這些細胞雖然是宿主防禦的一部分，但卻可能矛盾地促進癌症進展。過度的中性粒細胞浸潤通過釋放促炎介質對黏膜造成持續損傷，並塑造出促腫瘤的微環境。儘管它們的作用已被認可，但專門針對CAC中病理性中性粒細胞招募的治療策略仍然有限。田菁（Thlaspi arvense, TA）是一種傳統藥用植物，具有潛在的抗炎特性，這表明它在對抗CAC方面的潛在應用。因此，本研究旨在評估TA在預防CAC方面的有效性，並闡明其作用機制，特別是對中性粒細胞驅動的炎症的影響。我們使用了氮芥/右旋糖酐硫酸鈉（AOM/DSS）小鼠模型來研究CAC。小鼠接受TA治療，以評估其對疾病嚴重程度的影響，通過體重變化、結腸長度、腫瘤負擔和存活率來衡量。進行了組織學和免疫熒光染色，以評估黏膜完整性和緊密連接蛋白（ZO-1、Claudin-1）的表達。中性粒細胞的浸潤通過流式細胞術和免疫熒光定量。促炎細胞因子（IL-6、TNF-α、IL-1β、IFN-γ）和中性粒細胞趨化因子（CXCL1/2）的水平分別使用ELISA和qPCR進行測定。為了專門探討CXCL1/2-CXCR2通路，使用CXCR2抑制劑作為干預對照。通過RNA測序和西方印跡分析獲得了機制性見解。此外，還進行了分子對接，以預測TA主要成分與NOD/NF-κB通路核心蛋白的結合親和力。AOM/DSS小鼠模型成功再現了CAC的標誌性特徵。TA治療，特別是在較高劑量下，顯著減輕了病理表現，包括體重減輕、結腸縮短、腺瘤形成和嚴重的炎症反應。TA的給予一致性地恢復了黏膜完整性，並顯著上調了緊密連接蛋白ZO-1和Claudin-1的表達。在功能層面上，TA顯著減少了中性粒細胞趨化因子CXCL1和CXCL2的產生，從而削弱了它們與中性粒細胞上的CXCR2的相互作用，導致中性粒細胞招募的顯著減少。機制研究進一步顯示，TA通過抑制NOD/NF-κB信號通路中關鍵蛋白的活化來發揮其作用。這一抑制導致CXCL1/2表達的減少，從而減弱了中性粒細胞驅動的促腫瘤微環境。我們得出結論，TA通過抑制NOD/NF-κB通路及其下游的CXCL1/2-CXCR2介導的中性粒細胞招募來減輕結腸炎相關的致癌作用。本研究強調了針對中性粒細胞驅動的炎症的價值，並將TA定位為預防CAC進展的可行天然療法。",
     "doi": "10.1186/s13020-026-01381-5",
     "pmid": "41998751",
     "link": "https://doi.org/10.1186/s13020-026-01381-5",
-    "insight": "**Clinical Insight / 臨床啟示**  \nEN: This study highlights the potential of Thlaspi arvense as a natural therapeutic agent in preventing colitis-associated colorectal cancer by targeting neutrophil recruitment through the NOD/NF-κB pathway. By mitigating neutrophil-driven inflammation, it offers a promising strategy to reduce tumorigenesis in patients suffering from chronic colitis.  \nZH: 本研究突顯了田野青（Thlaspi arvense）作為一種天然治療劑在預防與結腸炎相關的結直腸癌方面的潛力，通過針對NOD/NF-κB通路中的中性粒細胞招募來達成。通過減輕中性粒細胞驅動的炎症，這為患有慢性結腸炎的患者提供了一種減少腫瘤形成的有希望的策略。\n\n**Future Direction / 未來方向**  \nEN: Future research should focus on clinical trials to evaluate the efficacy and safety of Thlaspi arvense in human populations with colitis-associated colorectal cancer. Additionally, exploring the molecular mechanisms underlying its anti-inflammatory effects may lead to the development of more targeted therapies for CAC.  \nZH: 未來的研究應集中於臨床試驗，以評估田野青在與結腸炎相關的結直腸癌患者中的有效性和安全性。此外，探索其抗炎作用的分子機制可能有助於開發針對CAC的更具針對性的療法。",
+    "insight": "EN: This study highlights the potential of Thlaspi arvense as a natural therapeutic agent to mitigate inflammation-driven tumorigenesis in colitis-associated colorectal cancer. \nZH: 本研究強調了 Thlaspi arvense 作為天然治療劑的潛力，以減輕大腸炎相關結腸直腸癌中的炎症驅動腫瘤生成。\n\nEN: Future research should focus on clinical trials to validate the efficacy of Thlaspi arvense in human subjects with colitis-associated colorectal cancer. \nZH: 未來的研究應集中於臨床試驗，以驗證 Thlaspi arvense 在大腸炎相關結腸直腸癌患者中的療效。",
     "score": 5
   },
   {
-    "id": 6,
+    "id": 5,
     "title": "Tumor-Derived Alpha-1 Antitrypsin Promotes Liver Metastasis of Colorectal Cancer Through the Neutrophil Extracellular Traps-CCDC25 Pathway.",
     "journal": "Advanced science (Weinheim, Baden-Wurttemberg, Germany)",
     "impactFactor": 0,
@@ -630,15 +612,15 @@ const ARTICLES = [
     "pubDate": "2026-04-16",
     "authors": "Fei Qian, Li Chunning, Zhan Lei, Li Xiaoyan, Hui Yan et al.",
     "abstract": "Liver metastasis is a leading cause of mortality in colorectal cancer (CRC), where the inflammatory tumor microenvironment, specifically neutrophil infiltration, significantly promotes metastatic colonization. This study reveals a pro-metastatic role for alpha-1 antitrypsin (A1AT) in CRC liver metastasis via a dual mechanism involving neutrophil extracellular traps (NETs) and the transmembrane protein coiled-coil domain-containing protein 25 (CCDC25). We demonstrate that A1AT, highly expressed by a liver-metastatic CRC cell line established in a mouse model, directly induces NETs' formation. Simultaneously, intracellular A1AT binds to CCDC25, preventing its lysosomal degradation and thereby increasing its surface expression. This A1AT-mediated upregulation of CCDC25 sensitizes tumor cells to surrounding NET-DNA. Upon engagement, the ILK-RAC1-CDC42 signaling cascade activates, driving extensive cytoskeletal rearrangement and enhancing the migratory and invasive capabilities of CRC cells. Collectively, our findings elucidate a mechanism wherein tumor cells exploit the A1AT-NET-CCDC25 axis to manipulate neutrophil function and boost metastatic potential. This axis represents a critical driver of CRC liver metastasis, offering novel biomarkers and promising therapeutic targets.",
-    "abstractZh": "肝轉移是結直腸癌（CRC）死亡率的主要原因，其中炎症性腫瘤微環境，特別是中性粒細胞的浸潤，顯著促進了轉移性殖民的形成。本研究揭示了α-1抗胰蛋白酶（A1AT）在CRC肝轉移中的促轉移作用，這一作用通過涉及中性粒細胞外陷阱（NETs）和跨膜蛋白螺旋-螺旋結構域蛋白25（CCDC25）的雙重機制實現。我們證明，A1AT在一個小鼠模型中建立的肝轉移CRC細胞系中表達量高，並能直接誘導NETs的形成。同時，細胞內的A1AT與CCDC25結合，防止其被溶酶體降解，從而增加其表面表達。這種A1AT介導的CCDC25上調使腫瘤細胞對周圍的NET-DNA變得敏感。一旦結合，ILK-RAC1-CDC42信號傳導級聯反應被激活，驅動廣泛的細胞骨架重組，增強CRC細胞的遷移和侵襲能力。總體而言，我們的研究結果闡明了一個機制，即腫瘤細胞利用A1AT-NET-CCDC25軸來操控中性粒細胞功能並提升轉移潛力。這一軸是CRC肝轉移的重要驅動因素，提供了新的生物標記和有前景的治療靶點。",
+    "abstractZh": "肝轉移是結直腸癌（CRC）死亡的主要原因，其中炎性腫瘤微環境，特別是中性粒細胞的浸潤，顯著促進了轉移性殖民的形成。本研究揭示了α-1抗胰蛋白酶（A1AT）在CRC肝轉移中的促轉移作用，涉及中性粒細胞外陷阱（NETs）和跨膜蛋白螺旋-螺旋結構域含量蛋白25（CCDC25）的雙重機制。我們證明了A1AT在一個在小鼠模型中建立的肝轉移CRC細胞系中高表達，能直接誘導NETs的形成。同時，細胞內的A1AT與CCDC25結合，防止其被溶酶體降解，從而增加其表面表達。這種A1AT介導的CCDC25上調使腫瘤細胞對周圍的NET-DNA變得敏感。一旦結合，ILK-RAC1-CDC42信號通路被激活，驅動廣泛的細胞骨架重組，增強CRC細胞的遷移和侵襲能力。總體而言，我們的研究結果闡明了一種機制，腫瘤細胞利用A1AT-NET-CCDC25軸來操控中性粒細胞功能並提升轉移潛力。這一軸線代表了CRC肝轉移的一個關鍵驅動因子，提供了新的生物標記和有前景的治療靶點。",
     "doi": "10.1002/advs.202520000",
     "pmid": "41980200",
     "link": "https://doi.org/10.1002/advs.202520000",
-    "insight": "**Clinical Insight / 臨床啟示**  \nEN: This study highlights the significant role of alpha-1 antitrypsin in promoting liver metastasis in colorectal cancer, emphasizing the importance of the neutrophil extracellular traps-CCDC25 pathway in the metastatic process. Understanding this mechanism could lead to improved diagnostic markers and targeted therapies for patients with colorectal cancer.  \nZH: 本研究強調了α-1抗胰蛋白酶在促進結直腸癌肝轉移中的重要角色，並強調了中性粒細胞外陷阱-CCDC25通路在轉移過程中的重要性。理解這一機制可能有助於改善結直腸癌患者的診斷標記和靶向療法。\n\n**Future Direction / 未來方向**  \nEN: Future research should explore the therapeutic potential of targeting the A1AT-NET-CCDC25 axis to inhibit liver metastasis in colorectal cancer. Additionally, investigating the role of other inflammatory mediators in this pathway could provide further insights into the tumor microenvironment's influence on metastasis.  \nZH: 未來的研究應探索針對A1AT-NET-CCDC25軸的治療潛力，以抑制結直腸癌的肝轉移。此外，研究其他炎性介質在此通路中的作用可能會進一步揭示腫瘤微環境對轉移的影響。",
+    "insight": "EN: The findings suggest that targeting the A1AT-NET-CCDC25 axis may provide new therapeutic strategies for managing liver metastasis in colorectal cancer patients. \nZH: 研究結果表明，針對A1AT-NET-CCDC25軸可能為管理結直腸癌患者的肝轉移提供新的治療策略。\n\nEN: Future studies should focus on developing inhibitors that disrupt the A1AT-NET-CCDC25 pathway to reduce metastatic spread. \nZH: 未來的研究應集中於開發破壞A1AT-NET-CCDC25通路的抑制劑，以減少轉移擴散。",
     "score": 5
   },
   {
-    "id": 7,
+    "id": 6,
     "title": "Radioiodination of Two Carborane-Based Dual Cyclooxygenase-2/5-Lipoxygenase Inhibitors and Their In Vitro and In Vivo Evaluation.",
     "journal": "Chembiochem : a European journal of chemical biology",
     "impactFactor": 0,
@@ -650,15 +632,15 @@ const ARTICLES = [
     "pubDate": "2026-04-01",
     "authors": "Sch&#xe4;dlich Jonas, Ullrich Martin, Haase-Kohn Cathleen, Wodtke Robert, Braun Sebastian et al.",
     "abstract": "Cyclooxygenase-2 (COX-2) and 5-lipoxygenase (5-LO) are key enzymes in prostanoid and leukotriene signaling and are overexpressed in various cancers, correlating with malignancy and metastasis. This renders them promising molecular targets for radiotracer development. In this study, isomeric closo-dicarbadodecaborane(12)-based dual COX-2/5-LO inhibitors (1 and 2) served as scaffolds for iodine-123-labeling. Iodinated derivatives 3 and 4 inhibited 5-LO more potently than COX-2 in vitro (IC50 0.62 &#xb5;M and 41.3 &#xb5;M (3); 0.54 &#xb5;M and 67.7 &#xb5;M (4)). Radioiodination yielded 39%-71% of [123I]3 and [123I]4; and the formulations were stabilized with antioxidants. Cellular uptake of [123I]3 and [123I]4 was evaluated in human cells with distinct COX-2 and 5-LO expression: U87 glioblastoma, HT-29 colorectal carcinoma cells, THP-1 monocytes (MC) and macrophages. Consistent with the observed inhibitory potency, the uptake of the radiotracers proved to be independent of COX-2 expression. In contrast, it was influenced by 5-LO expression in tumor but not inflammatory cells. Single-photon emission computed tomography imaging in tumor xenograft mouse models revealed no tumor retention of [123I]3 and [123I]4 due to rapid metabolism via radiodeiodination. Despite successful radiosynthesis and in vitro evaluation of iodine-123-labeled COX-2/5-LO inhibitors, improved inhibitory activity and stability are required for development of suitable radiotracers.",
-    "abstractZh": "環氧合酶-2 (COX-2) 和 5-脂氧合酶 (5-LO) 是前列腺素和白三烯信號傳遞中的關鍵酶，並在各種癌症中表現過度，與惡性程度和轉移相關。因此，它們成為放射性示蹤劑開發的有前景的分子靶點。在本研究中，基於異構體 closo-dicarbadodecaborane(12) 的雙重 COX-2/5-LO 抑制劑 (1 和 2) 作為碘-123 標記的支架。碘化衍生物 3 和 4 在體外對 5-LO 的抑制作用比對 COX-2 更強 (IC50 0.62 μM 和 41.3 μM (3); 0.54 μM 和 67.7 μM (4))。放射性碘化產物的產率為 39%-71% 的 [123I]3 和 [123I]4，並且這些配方經抗氧化劑穩定。對於在人類細胞中具有不同 COX-2 和 5-LO 表達的細胞 (如 U87 神經膠瘤、HT-29 結直腸癌細胞、THP-1 單核細胞 (MC) 和巨噬細胞) 的 [123I]3 和 [123I]4 的細胞攝取進行了評估。與觀察到的抑制效力一致，放射性示蹤劑的攝取被證明與 COX-2 表達無關。相反，在腫瘤細胞中，攝取受到 5-LO 表達的影響，但在炎症細胞中則不然。在腫瘤異種移植小鼠模型中的單光子發射計算機斷層掃描影像顯示，由於通過放射性去碘化的快速代謝，未能在腫瘤中保留 [123I]3 和 [123I]4。儘管成功合成了碘-123 標記的 COX-2/5-LO 抑制劑並進行了體外評估，但仍需改進抑制活性和穩定性，以開發合適的放射性示蹤劑。",
+    "abstractZh": "環氧合酶-2（COX-2）和5-脂氧合酶（5-LO）是前列腺素和白三烯信號傳導中的關鍵酶，並在各種癌症中表現過度，與惡性程度和轉移相關。因此，它們成為放射性示蹤劑開發的有前景的分子靶點。在本研究中，基於異構體的closo-dicarbadodecaborane(12)的雙重COX-2/5-LO抑制劑（1和2）作為碘-123標記的支架。碘化衍生物3和4在體外對5-LO的抑制作用比對COX-2更強（IC50 0.62 μM和41.3 μM（3）；0.54 μM和67.7 μM（4））。放射性碘化產物的產率為39%-71%的[123I]3和[123I]4，並且這些配方用抗氧化劑進行了穩定化。在具有不同COX-2和5-LO表達的人類細胞中評估了[123I]3和[123I]4的細胞攝取：U87膠質母細胞瘤、HT-29結腸癌細胞、THP-1單核細胞（MC）和巨噬細胞。與觀察到的抑制效力一致，放射性示蹤劑的攝取被證明與COX-2表達無關。相反，腫瘤細胞中的攝取受到5-LO表達的影響，而在炎症細胞中則不受影響。在腫瘤異種移植小鼠模型中進行的單光子發射計算機斷層掃描成像顯示，由於通過放射性去碘化的快速代謝，未見[123I]3和[123I]4在腫瘤中的滯留。儘管成功合成了碘-123標記的COX-2/5-LO抑制劑並進行了體外評估，但仍需改進其抑制活性和穩定性，以開發合適的放射性示蹤劑。",
     "doi": "10.1002/cbic.202600004",
     "pmid": "41918160",
     "link": "https://doi.org/10.1002/cbic.202600004",
-    "insight": "**Clinical Insight / 臨床啟示**  \nEN: This study highlights the potential of dual COX-2/5-LO inhibitors as promising candidates for radiotracer development in cancer imaging. The findings suggest that targeting 5-LO may be more critical for effective imaging in tumors, emphasizing the need for tailored approaches in radiotracer design.  \nZH: 這項研究突顯了雙重COX-2/5-LO抑制劑作為癌症影像學中放射性示蹤劑開發的潛在候選者。研究結果表明，針對5-LO可能對於有效的腫瘤影像更為關鍵，強調了在放射性示蹤劑設計中需要量身定制的方法。\n\n**Future Direction / 未來方向**  \nEN: Future research should focus on enhancing the stability and inhibitory activity of these iodine-123-labeled compounds to improve their efficacy as radiotracers. Additionally, exploring the mechanisms of uptake in various cell types could provide insights into optimizing these agents for clinical applications.  \nZH: 未來的研究應著重於提高這些碘-123標記化合物的穩定性和抑制活性，以改善其作為放射性示蹤劑的效能。此外，探索不同細胞類型中的攝取機制可能會為優化這些試劑在臨床應用中的表現提供見解。",
+    "insight": "EN: The study highlights the potential of COX-2 and 5-LO as molecular targets for radiotracer development in cancer imaging. \nZH: 本研究突顯了COX-2和5-LO作為癌症影像學中放射性示蹤劑開發的分子靶點的潛力。\n\nEN: Future research should focus on enhancing the stability and inhibitory activity of these radiotracers for better clinical applicability. \nZH: 未來的研究應集中於提高這些放射性示蹤劑的穩定性和抑制活性，以提高其臨床應用性。",
     "score": 5
   },
   {
-    "id": 8,
+    "id": 7,
     "title": "Sanghuangporus vaninii extract exerts dual anti-tumor effects in colitis-associated colorectal cancer by direct cytotoxicity and macrophage reprogramming via the PPAR&#x3b3;/NF-&#x3ba;B axis.",
     "journal": "Journal of ethnopharmacology",
     "impactFactor": 0,
@@ -670,11 +652,29 @@ const ARTICLES = [
     "pubDate": "2026-04-14",
     "authors": "Wang Yuqing, Mao Shangling, Shi Chao, Bu Qingru, Xu Ziyi et al.",
     "abstract": "Sanghuangporus vaninii (SH) is a medicinal mushroom used in traditional Chinese medicine to treat conditions described in ancient texts as \"Zheng Jia Ji Ju\" and \"Xue Li\". These terms are understood to be analogous to tumors and hematochezia, respectively. Nevertheless, the therapeutic potential and precise mechanisms of SH in inhibiting colitis-associated malignant transformation remain to be elucidated. This study aimed to evaluate the antitumor effect of SH on colitis-associated colorectal cancer (CAC) and to delineate the fundamental mechanisms. The therapeutic efficacy of SH was validated using an AOM/DSS-induced CAC mouse model. Cytokine levels were quantified by ELISA. To identify the potential targets of SH, a network pharmacology approach was utilized. Subsequently, in vitro assays assessed the effects of SH on the viability, colony formation, along with cell cycle distribution of colorectal cancer (CRC) cells. A macrophage-CRC cell co-culture system was established to model an inflammatory microenvironment. The molecular mechanisms were elucidated through a series of assays, including flow cytometry, immunohistochemistry (IHC), immunofluorescence (IF), western blotting (WB), RT-qPCR, and co-immunoprecipitation (Co-IP). SH treatment dose-dependently suppressed colitis-associated carcinogenesis in AOM/DSS mice, improving body weight, colon length, and survival, while reducing tumor number and disease activity index. In colon tissues and serum, SH rebalanced the cytokine profile by suppressing positive regulators of inflammation (IL-6, IL-1&#x3b2;, TNF-&#x3b1;) and enhancing negative regulators of inflammation (IL-10, TGF-&#x3b2;). Network pharmacological analysis identified the PPAR&#x3b3;/NF-&#x3ba;B axis as the core pathway. This was validated in vitro and in vivo, where SH inhibited CRC cell proliferation, triggered cell cycle arrest, and promoted macrophage polarization towards an anti-inflammatory and pro-repair M2 phenotype. Mechanistically, WB, IHC, IF, and Co-IP confirmed that SH upregulated PPAR&#x3b3; expression and enhanced its interaction with NF-&#x3ba;B p65, thereby inhibiting NF-&#x3ba;B activation and its downstream inflammatory and proliferative signaling. SH ameliorates CAC through a dual mechanism: directly inhibiting tumor cell proliferation and modulating tumor-associated macrophages towards an anti-inflammatory, tissue-repair phenotype. These effects depend critically on activation of the PPAR&#x3b3;/NF-&#x3ba;B axis, which effectively intervenes in the inflammation-to-cancer cascade.",
-    "abstractZh": "Sanghuangporus vaninii (SH) 是一種在傳統中醫中用於治療古代文獻中所描述的「正家積聚」和「血痢」等病症的藥用蘑菇。這些術語被理解為類似於腫瘤和便血。然而，SH 在抑制與結腸炎相關的惡性轉化方面的治療潛力及其精確機制仍需進一步闡明。本研究旨在評估 SH 對結腸炎相關結直腸癌（CAC）的抗腫瘤效果並闡明其基本機制。SH 的治療效果通過 AOM/DSS 誘導的 CAC 小鼠模型進行驗證。細胞因子水平通過 ELISA 進行定量。為了識別 SH 的潛在靶點，採用了網絡藥理學方法。隨後，體外實驗評估了 SH 對結直腸癌（CRC）細胞的存活率、克隆形成及細胞週期分佈的影響。建立了巨噬細胞-CRC 細胞共培養系統以模擬炎症微環境。通過一系列實驗，包括流式細胞術、免疫組織化學（IHC）、免疫螢光（IF）、西方印跡（WB）、RT-qPCR 和共同免疫沉澱（Co-IP），闡明了分子機制。SH 處理以劑量依賴性方式抑制了 AOM/DSS 小鼠的結腸炎相關致癌作用，改善了體重、結腸長度和存活率，同時減少了腫瘤數量和疾病活動指數。在結腸組織和血清中，SH 通過抑制炎症的正調節因子（IL-6、IL-1β、TNF-α）和增強炎症的負調節因子（IL-10、TGF-β）來重新平衡細胞因子譜。網絡藥理學分析確定 PPARγ/NF-κB 軸為核心通路。這一結果在體內外均得到了驗證，SH 抑制了 CRC 細胞增殖，誘導了細胞週期停滯，並促進了巨噬細胞向抗炎和促修復的 M2 表型極化。在機制上，WB、IHC、IF 和 Co-IP 確認 SH 上調了 PPARγ 表達並增強了其與 NF-κB p65 的相互作用，從而抑制了 NF-κB 的活化及其下游的炎症和增殖信號。SH 通過雙重機制改善 CAC：直接抑制腫瘤細胞增殖並調節腫瘤相關巨噬細胞向抗炎和組織修復表型。這些效果在很大程度上依賴於 PPARγ/NF-κB 軸的激活，該軸有效地介入了炎症到癌症的級聯反應。",
+    "abstractZh": "Sanghuangporus vaninii (SH) 是一種藥用蘑菇，傳統中醫用於治療古籍中所描述的「正家積聚」和「血痢」等病症。這些術語被理解為類似腫瘤和血便。然而，SH 在抑制與結腸炎相關的惡性轉化方面的治療潛力及其精確機制仍需進一步闡明。本研究旨在評估 SH 對結腸炎相關結直腸癌 (CAC) 的抗腫瘤效果，並闡明其基本機制。使用 AOM/DSS 誘導的 CAC 小鼠模型驗證了 SH 的治療效果。通過 ELISA 定量測定細胞因子水平。為了識別 SH 的潛在靶點，採用了網絡藥理學方法。隨後，進行了體外實驗，以評估 SH 對結直腸癌 (CRC) 細胞的活力、克隆形成及細胞週期分佈的影響。建立了巨噬細胞與 CRC 細胞的共培養系統，以模擬炎症微環境。通過一系列實驗，包括流式細胞術、免疫組織化學 (IHC)、免疫螢光 (IF)、西方印跡 (WB)、RT-qPCR 和共免疫沉澱 (Co-IP) 來闡明分子機制。SH 處理以劑量依賴的方式抑制了 AOM/DSS 小鼠的結腸炎相關致癌作用，改善了體重、結腸長度和存活率，同時減少了腫瘤數量和疾病活動指數。在結腸組織和血清中，SH 通過抑制炎症的正調節因子 (IL-6、IL-1β、TNF-α) 並增強炎症的負調節因子 (IL-10、TGF-β) 來重新平衡細胞因子譜。網絡藥理學分析確定了 PPARγ/NF-κB 軸為核心通路。這一結果在體內外均得到了驗證，SH 抑制了 CRC 細胞增殖，誘導了細胞週期停滯，並促進了巨噬細胞向抗炎和促修復的 M2 表型極化。在機制上，WB、IHC、IF 和 Co-IP 確認 SH 上調了 PPARγ 表達並增強了其與 NF-κB p65 的相互作用，從而抑制了 NF-κB 的活化及其下游的炎症和增殖信號。SH 通過雙重機制改善 CAC：直接抑制腫瘤細胞增殖和調節腫瘤相關巨噬細胞向抗炎、組織修復表型。這些效果在很大程度上依賴於 PPARγ/NF-κB 軸的活化，該軸有效介入了炎症到癌症的級聯反應。",
     "doi": "10.1016/j.jep.2026.121657",
     "pmid": "41974235",
     "link": "https://doi.org/10.1016/j.jep.2026.121657",
-    "insight": "**Clinical Insight / 臨床啟示**  \nEN: This study highlights the potential of Sanghuangporus vaninii as a therapeutic agent for colitis-associated colorectal cancer, demonstrating its ability to exert dual anti-tumor effects through direct cytotoxicity and macrophage reprogramming. These findings suggest that incorporating SH into treatment regimens may enhance patient outcomes by targeting both tumor cells and the inflammatory microenvironment.  \nZH: 本研究突顯了桑黃菌提取物作為治療結腸炎相關結直腸癌的潛力，顯示其通過直接細胞毒性和巨噬細胞重編程發揮雙重抗腫瘤效果。這些發現表明，將桑黃菌納入治療方案可能通過同時針對腫瘤細胞和炎症微環境來改善患者的預後。\n\n**Future Direction / 未來方向**  \nEN: Future research should focus on clinical trials to validate the efficacy and safety of Sanghuangporus vaninii in human patients with colitis-associated colorectal cancer. Additionally, exploring the precise molecular mechanisms and potential synergistic effects with other therapies could further enhance its therapeutic application.  \nZH: 未來的研究應集中於臨床試驗，以驗證桑黃菌在結腸炎相關結直腸癌患者中的療效和安全性。此外，探索其精確的分子機制以及與其他療法的潛在協同效應，可能進一步增強其治療應用。",
+    "insight": "EN: The findings suggest that Sanghuangporus vaninii could be a promising therapeutic agent for patients with colitis-associated colorectal cancer by targeting inflammatory pathways. \nZH: 研究結果表明，桑黃可能成為結腸炎相關結直腸癌患者的一種有前景的治療藥物，通過針對炎症通路來發揮作用。\n\nEN: Future studies should focus on clinical trials to validate the efficacy of SH in human subjects and explore its potential combination with other therapies. \nZH: 未來的研究應著重於臨床試驗，以驗證SH在人體中的療效，並探索其與其他療法的潛在聯合使用。",
+    "score": 5
+  },
+  {
+    "id": 8,
+    "title": "Repurposing PARP inhibitors in molecularly defined subgroups of peritoneal metastatic colorectal cancer (pmCRC): Preclinical analysis of patient-derived xenograft …",
+    "journal": "Cancer …",
+    "impactFactor": 0,
+    "studyType": "Basic Research",
+    "isAsiaPriority": false,
+    "countries": [],
+    "pubDate": "2026",
+    "authors": "M Dahlmann, B Rau, S Gül-Klein, B Brzezicha…",
+    "abstract": "… Peritoneal metastatic colorectal cancer (pmCRC) has the worst outcome compared to metastatic CRC patients with metastases … of both systemic and peritoneal specific treatment, 50% …",
+    "abstractZh": "腹膜轉移性結直腸癌（pmCRC）的預後最差，相較於其他有轉移的結直腸癌患者……無論是全身性治療還是針對腹膜的特定治療，50%……",
+    "doi": "",
+    "pmid": "",
+    "link": "https://aacrjournals.org/cancerres/article/86/7_Supplement/4476/777724",
+    "insight": "EN: The findings suggest that molecular profiling of pmCRC patients could guide the use of PARP inhibitors, potentially improving treatment outcomes. \nZH: 這些發現表明，對pmCRC患者進行分子分型可能有助於指導PARP抑制劑的使用，從而改善治療效果。\n\nEN: Future research should focus on clinical trials to validate the efficacy of PARP inhibitors in identified pmCRC subgroups. \nZH: 未來的研究應集中於臨床試驗，以驗證PARP抑制劑在已確定的pmCRC亞群中的有效性。",
     "score": 5
   },
   {
@@ -688,15 +688,15 @@ const ARTICLES = [
     "pubDate": "2026",
     "authors": "J Ning, C Cai, X Fan, C Liao, M Shen",
     "abstract": "… The inhibitory effect of ALC on colorectal tumor growth was further validated in a nude … In vivo experiments demonstrated that ALC effectively suppressed colorectal tumor growth in a …",
-    "abstractZh": "… ALC對結直腸腫瘤生長的抑制作用在裸鼠中得到了進一步驗證… 在體內實驗中顯示，ALC有效抑制了結直腸腫瘤的生長…",
+    "abstractZh": "… ALC對結直腸腫瘤生長的抑制作用在裸鼠中進一步得到驗證 … 体内實驗顯示，ALC有效抑制了結直腸腫瘤的生長 …",
     "doi": "",
     "pmid": "",
     "link": "https://www.sciencedirect.com/science/article/pii/S0731708526000312",
-    "insight": "**Clinical Insight / 臨床啟示**  \nEN: This study highlights the potential of Acetyl-L-Carnitine (ALC) as a therapeutic agent in the management of colorectal cancer, suggesting that it may inhibit tumor growth and improve patient outcomes. The findings encourage clinicians to consider ALC in treatment protocols, particularly for patients with advanced colorectal cancer.  \nZH: 這項研究突顯了乙酰-L-肉鹼（ALC）作為結腸直腸癌治療劑的潛力，表明其可能抑制腫瘤生長並改善患者預後。研究結果鼓勵臨床醫生在治療方案中考慮ALC，特別是對於晚期結腸直腸癌患者。\n\n**Future Direction / 未來方向**  \nEN: Future research should focus on elucidating the precise molecular mechanisms by which ALC exerts its anti-tumor effects, as well as conducting clinical trials to assess its efficacy and safety in diverse patient populations. Additionally, exploring the synergistic effects of ALC with other therapeutic agents could provide new avenues for enhancing colorectal cancer treatment.  \nZH: 未來的研究應集中於闡明ALC發揮抗腫瘤作用的精確分子機制，以及進行臨床試驗以評估其在不同患者群體中的療效和安全性。此外，探索ALC與其他治療劑的協同作用可能為增強結腸直腸癌治療提供新的途徑。",
+    "insight": "EN: The findings suggest that ALC could be a potential therapeutic agent for colorectal cancer treatment. \nZH: 這些發現表明ALC可能成為大腸癌治療的潛在療法。\n\nEN: Future research should focus on elucidating the specific metabolic pathways affected by ALC. \nZH: 未來的研究應著重於闡明ALC影響的具體代謝途徑。",
     "score": 5
   }
 ];
-const OVERALL_INSIGHTS = "### 綜合啟示 (Overall Insights)\n\n1. **Pathogenic Mechanisms in Colorectal Cancer**  \n   The studies highlight the complex interplay between inflammation and colorectal carcinogenesis, emphasizing the role of immune responses and microbial factors in disease progression.  \n   這些研究突顯了炎症與結直腸癌之間的複雜相互作用，強調免疫反應和微生物因子在疾病進展中的作用。\n\n2. **Prognostic Biomarkers**  \n   Several studies have identified and validated new prognostic biomarkers, such as the CALLY index and systemic immune-inflammation index, which may enhance patient stratification and treatment planning.  \n   幾項研究已經識別並驗證了新的預後生物標記，如CALLY指數和系統性免疫炎症指數，這可能增強患者分層和治療計劃的制定。\n\n3. **Therapeutic Strategies**  \n   The exploration of novel therapeutic agents, including natural compounds like Sanghuangporus vaninii and Thlaspi arvense, presents promising avenues for managing colitis-associated colorectal cancer.  \n   探索新型治療劑，包括像是桑黃和田野芥的天然化合物，為管理結腸炎相關結直腸癌提供了有希望的途徑。\n\n4. **Need for Patient Education**  \n   The awareness of colorectal cancer risk among patients with inflammatory bowel disease is insufficient, indicating a critical need for educational interventions to improve management strategies.  \n   為炎症性腸病患者對結直腸癌風險的認識不足，顯示出迫切需要進行教育干預以改善管理策略。\n\n5. **Role of Neutrophils in Tumor Progression**  \n   The studies reveal the dual role of neutrophils in cancer progression, highlighting their potential as therapeutic targets to mitigate tumor growth and metastasis.  \n   這些研究揭示了中性粒細胞在癌症進展中的雙重角色，強調它們作為治療靶點以減緩腫瘤生長和轉移的潛力。\n\n### 未來研究方向 (Future Research Directions)\n\n1. **Mechanistic Studies on Inflammation and Cancer**  \n   Further research is needed to elucidate the specific mechanisms by which inflammatory processes contribute to colorectal cancer development, particularly focusing on microbial interactions and immune modulation.  \n   需要進一步研究以闡明炎症過程如何具體促進結直腸癌發展的機制，特別是聚焦於微生物相互作用和免疫調節。\n\n2. **Validation of Prognostic Indices**  \n   Future studies should aim to validate the prognostic utility of indices like CALLY and SII in larger, diverse patient populations to enhance their clinical applicability.  \n   未來的研究應旨在在更大且多樣化的患者群體中驗證如CALLY和SII等指數的預後效用，以增強其臨床應用性。\n\n3. **Exploration of Novel Therapeutics**  \n   Investigating the therapeutic potential of natural compounds and their mechanisms of action against colorectal cancer could lead to innovative treatment options.  \n   探索天然化合物的治療潛力及其對抗結直腸癌的作用機制，可能會導致創新的治療選擇。\n\n4. **Patient Education and Awareness Programs**  \n   Developing and implementing educational programs targeted at patients with inflammatory bowel disease to raise awareness of their cancer risks and management options is essential.  \n   開發和實施針對炎症性腸病患者的教育計劃，以提高他們對癌症風險和管理選擇的認識是至關重要的。\n\n5. **Investigating Neutrophil-targeted Therapies**  \n   Research should focus on developing therapies that specifically target neutrophil activity in the tumor microenvironment to potentially reduce metastasis and improve patient outcomes.  \n   研究應聚焦於開發專門針對腫瘤微環境中中性粒細胞活性的療法，以潛在減少轉移並改善患者預後。";
+const OVERALL_INSIGHTS = "### 綜合啟示 (Overall Insights)\n\n1. **腫瘤微環境與轉移的關聯性**  \n   The inflammatory tumor microenvironment plays a critical role in promoting metastasis in colorectal cancer, particularly through mechanisms involving neutrophil infiltration.  \n   腫瘤微環境中的炎症對於促進大腸癌轉移具有關鍵作用，特別是通過中性粒細胞浸潤的機制。\n\n2. **系統性免疫炎症指數的預後價值**  \n   The systemic immune-inflammation index (SII) has emerged as a significant prognostic biomarker for colorectal cancer, indicating its potential utility in clinical practice.  \n   系統性免疫炎症指數（SII）已成為大腸癌的重要預後生物標記，顯示其在臨床實踐中的潛在應用價值。\n\n3. **炎症性腸病患者的癌症風險認知**  \n   There is a notable gap in awareness regarding the risk of colorectal cancer among patients with inflammatory bowel disease, highlighting the need for better education and management strategies.  \n   炎症性腸病患者對大腸癌風險的認知存在明顯不足，突顯了改善教育和管理策略的必要性。\n\n4. **新療法的潛力**  \n   Emerging therapeutic strategies targeting inflammation-driven colorectal carcinogenesis, such as the use of specific extracts and inhibitors, show promise in preclinical studies.  \n   針對炎症驅動的大腸癌發生的新療法，如特定提取物和抑制劑的使用，在前臨床研究中顯示出潛力。\n\n5. **PARP抑制劑的再利用**  \n   The repurposing of PARP inhibitors for molecularly defined subgroups of peritoneal metastatic colorectal cancer could provide new avenues for treatment in this challenging patient population.  \n   將PARP抑制劑再利用於分子特徵定義的腹膜轉移性大腸癌亞組，可能為這一挑戰性患者群體提供新的治療途徑。\n\n### 未來研究方向 (Future Research Directions)\n\n1. **深入探討腫瘤微環境的角色**  \n   Future studies should focus on elucidating the specific mechanisms by which the tumor microenvironment influences metastatic behavior in colorectal cancer.  \n   未來的研究應集中於闡明腫瘤微環境如何影響大腸癌的轉移行為的具體機制。\n\n2. **擴大系統性免疫炎症指數的應用研究**  \n   Expanding research on the application of the systemic immune-inflammation index across diverse patient populations may enhance its prognostic utility.  \n   擴大系統性免疫炎症指數在不同患者群體中的應用研究，可能會增強其預後價值。\n\n3. **提高患者對癌症風險的認知**  \n   Interventions aimed at improving awareness and understanding of colorectal cancer risks among patients with inflammatory bowel disease should be developed and tested.  \n   應開發和測試旨在提高炎症性腸病患者對大腸癌風險認知的干預措施。\n\n4. **探索新療法的臨床試驗**  \n   Clinical trials evaluating the efficacy and safety of emerging therapies targeting inflammation in colorectal cancer are warranted to validate their therapeutic potential.  \n   需要進行臨床試驗以評估針對大腸癌炎症的新療法的有效性和安全性，以驗證其治療潛力。\n\n5. **PARP抑制劑的分子標記研究**  \n   Investigating molecular markers that predict response to PARP inhibitors in peritoneal metastatic colorectal cancer could refine patient selection for targeted therapies.  \n   研究預測腹膜轉移性大腸癌對PARP抑制劑反應的分子標記，可能會精細化針對性治療的患者選擇。";
 const WEEK_RANGE = "2026-04-11 — 2026-04-18";
 
 function togglePaper(e, id) {
