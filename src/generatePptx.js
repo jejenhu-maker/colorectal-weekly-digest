@@ -92,6 +92,10 @@ function buildPptx(articles, overallInsights, weekRange, lang) {
     sA.addText(bulletItems, { x: 0.8, y: 2.6, w: 11, valign: 'top' });
 
     // Link
+    // Reference at bottom
+    const refParts = [a.authors ? a.authors.slice(0, 3).join(', ') + (a.authorCount > 3 ? ' et al.' : '') : '', a.journal || '', a.pubDate || ''].filter(Boolean).join('. ');
+    const refText = refParts + (a.doi ? ` DOI: ${a.doi}` : '');
+    sA.addText(refText, { x: 0.8, y: 6.4, w: 11, fontSize: 8, color: C.midGray, margin: 0 });
     if (paperLink) {
       sA.addText(`📎 ${isZh ? '查看論文' : 'View Paper'} →`, { x: 0.8, y: 6.8, w: 4, fontSize: 10, color: C.accent, bold: true, margin: 0, hyperlink: { url: paperLink } });
     }
