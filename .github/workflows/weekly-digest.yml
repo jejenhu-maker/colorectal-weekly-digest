@@ -1,9 +1,6 @@
 name: Weekly Colorectal Digest
 
 on:
-  schedule:
-    # Every Monday at 01:00 UTC = 09:00 Taiwan time
-    - cron: '0 1 * * 1'
   workflow_dispatch: # Allow manual trigger
 
 permissions:
